@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="weather">
+        <div class="search">
+            <input id="input" type="text" placeholder="enter your city" spellcheck="false">
+            <button id="button"><img src="images/search.png"></button>
+        </div>
+        <p class="invalid" style="text-align: left; margin-left: 8%; font-size: large; font-weight: 600; color: white; padding-top: 10px;">Invalid county, pls try again</p>
+        <div class="all_other_contents">
+            <div class="city">
+                <img src="images/rain.png" alt="">
+                <h1 class="temp">273<span id="c" style="font-size: 65px;">℃</span></h1>
+                <div class="tour">
+                    <h2 class="name">LOCATION</h2>
+                    <h2>||</h2>
+                    <h2 class="country">COUNTRY</h2>
+                </div>
+            </div>
+            <div class="rate">
+                <div class="humidity">
+                    <img src="images/humidity.png" alt="">
+                    <div>
+                        <h2 class="humidityt">64%</h2>
+                        <p>Humidity</p>
+                    </div>
+                </div>
+                <div class="wind">
+                    <img src="images/wind.png" alt="">
+                    <div>
+                        <h2 class="windt">45 KM/H</h2>
+                        <p>Wind speed</p>
+                    </div>
+                </div>
+            </div>
+            <script src="script.js"></script>
+        </div>
+        </div>
+</body>
+</html>

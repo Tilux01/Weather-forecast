@@ -1,0 +1,111 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background: linear-gradient(135deg, rgba(8, 113, 206, 0.644), rgba(128, 0, 128, 0.753));
+    font-family: sans-serif;
+    align-items: center;
+    height: 100vh;
+}
+.weather{
+    width: 90%;
+    max-width: 500px;
+    inset: 0;
+    border-radius: 10px;
+    padding: 40px 10px 40px 10px;
+    background: linear-gradient(135deg, rgba(63, 152, 230, 0.911), rgba(128, 0, 128, 0.603));
+    scale: 0.9;
+}
+.search{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.search input{
+    padding: 20px 90px 20px 25px;
+    background-color: rgba(255, 255, 255, 0.253);
+    border: 2px solid ;
+    border-color: aliceblue;
+    border-radius: 50px;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    outline: 0;
+    border: 0;
+}
+.search input::placeholder{
+    color: white;
+}
+.search input:focus{
+    box-shadow: 0px 10px 30px rgba(128, 0, 128, 0.336);
+}
+.search button{
+    width: 60px;
+    height: 60px;
+    background-color: white;
+    border-radius: 50%;
+    border-style: none;
+    cursor: pointer;
+}
+.search button img{
+    width: 40%;
+}
+.city{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    color: white;
+}
+.tour{
+    display: flex;
+    gap: 1.2rem;
+}
+.city img{
+    width: 300px;
+}
+.city h1{
+    font-size: 80px;
+    position: relative;
+    top: -10px;
+    font-weight: 700;
+}
+.city h2{
+    font-size: 35px;
+    font-weight: 500;
+}
+.rate{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top: 100px;
+}
+.humidity, 
+.wind{
+    display: flex;
+    gap: 1.2rem;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+.humidity img, 
+.wind img{
+    width: 50px;
+    height: 50px;
+}
+.all_other_contents{
+    display: none;
+}
+.invalid{
+    display: none;
+}
