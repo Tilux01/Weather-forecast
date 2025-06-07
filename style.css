@@ -9,6 +9,8 @@ body{
     justify-content: center;
     background: linear-gradient(135deg, rgba(8, 113, 206, 0.644), rgba(128, 0, 128, 0.753));
     font-family: sans-serif;
+    background-position: center;
+    background-size: cover;
     align-items: center;
     height: 100vh;
 }
@@ -29,7 +31,9 @@ body{
     padding-right: 20px;
 }
 .search input{
-    padding: 20px 90px 20px 25px;
+    padding: 20px 20px;
+    width: 85%;
+    margin-right: 5px;
     background-color: rgba(255, 255, 255, 0.253);
     border: 2px solid ;
     border-color: aliceblue;
@@ -70,7 +74,7 @@ body{
     gap: 1.2rem;
 }
 .city img{
-    width: 300px;
+    width: 30%;
 }
 .city h1{
     font-size: 80px;
@@ -108,4 +112,20 @@ body{
 }
 .invalid{
     display: none;
+}
+@media screen and (max-width:429px) {
+    .city img{
+        width: 20%;
+        margin-left: 20px;
+    }
+    .city h1{
+        font-size: 60px;
+        position: relative;
+        top: -10px;
+        font-weight: 700;
+    }
+    .city h2{
+        font-size: 25px;
+        font-weight: 500;
+    }
 }
